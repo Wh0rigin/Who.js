@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Who.js"></script>
+</head>
+<body>
+    <script>
+        const vm = new Who({
+        data(){
+            return{
+                name:"张三",
+                home:{
+                    address:'浙江',
+                    name:'浙江交通职业技术学院',
+                },
+                firends:[
+                    {name:"李四",address:"浙江",home:{name:'home1',address:'浙江'}},
+                    {name:"王五",address:"浙江",home:[{name:'home2',address:'浙江'},{name:'home3',address:'上海'}]},
+                ],
+                traits:['响应式','可视化','渐进式','组件化'],
+            }
+        }
+    })
+    </script>
+</body>
+</html>
